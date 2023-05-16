@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div *ngFor="let product of products" class="product-list">
+        <div class="card">
+            <div class="info">
+                <img src="assets/images/item{{product.productId}}.jpg" style="max-width: 200px; max-height: 200px;">
+                <p style="padding-left: 10px; padding-top: 20px; width: 250px;">
+                    {{product.productName}} <br>
+                    {{product.description}} <br>
+                </p>
+            </div>
+            <button (click)="addToCart(product.productId)" style="height: 70px; width: 70px; margin-top: 30%;">Add to Cart 
+                <img src="assets/images/cart_icon.jpg" style="max-width: 20px; max-height: 20px;">
+                ${{product.price}}
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+.container{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-list{
+    padding: 20px;
+    clear: both;
+}
+
+.card {
+    all: unset;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: 240px;
+    width: 550px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+}
+
+.info{
+    display: flex;
+}

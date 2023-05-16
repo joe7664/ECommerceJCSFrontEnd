@@ -1,0 +1,34 @@
+#navbar {
+    position: fixed;
+    background-color: rgb(93, 175, 26);
+    font-size: 1.5em;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar>h1 {
+    padding-left: 15px;
+    margin-bottom: 0;
+}
+button{
+    height: 25px;
+    align-content: auto;
+    align-items: auto;
+    align-self: auto;
+    justify-self: auto;
+    justify-items: auto;
+    justify-content: auto;
+}
+.loginButton, .logoutButton {
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+div>button {
+    margin:0 4px;
+}

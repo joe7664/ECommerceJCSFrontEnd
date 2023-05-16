@@ -1,0 +1,12 @@
+<app-navbar></app-navbar>
+<div id="login" style="margin-top: 10%;">
+    <h2 class="title">Login</h2>
+    <form class="inputBlock" style="align-items: center;">
+        <input [(ngModel)]="email" class="inputBlock" name="email" type="text" placeholder="Email" required><br><br>
+        <input [(ngModel)]="password" class="inputBlock" name="password" type="password" placeholder="Password" required><br><br>
+        <div style="max-width: 300px; margin: auto;">
+            <button mat-raised-button type="submit" class="submitButton" (click)="submit()">Login</button><br><br>
+            <button mat-raised-button routerLink="/register" class="submitButton">Register an Account</button>
+        </div>
+    </form>
+</div>

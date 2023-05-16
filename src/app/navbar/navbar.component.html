@@ -1,0 +1,11 @@
+<div id="navbar">
+    <mat-toolbar style="display:flex; justify-content: space-between;">
+        <span routerLink="/home"><b>Product List</b></span>
+        <div>
+            <button (click)="logId()">Log Id</button>
+            <button mat-raised-button *ngIf="isLoggedIn!=0" routerLink="/cart">Cart <img src="assets/images/cart_icon.jpg" style="max-width: 15px; max-height: 15px;"></button>
+            <button mat-raiser-button *ngIf="isLoggedIn!=0" (click)="logout()">Logout</button>
+        </div>
+    </mat-toolbar>
+
+</div>
